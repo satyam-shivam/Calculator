@@ -38,8 +38,8 @@ function buttonAction(){
         if (lastChar == null){
             return;
         }
-        evalExpression = evalExpression + buttonzero.getAttribute('data-value');
-        lastChar = buttonzero.getAttribute('data-value');
+        evalExpression = evalExpression + this.getAttribute('data-value');
+        lastChar = this.getAttribute('data-value');
         document.getElementById('display').innerText = evalExpression;
     }
 
